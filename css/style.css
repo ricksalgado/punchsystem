@@ -1,7 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Montserrat", serif;
+}
+
 html{
     width: 100vw;
     height: 100vh;
     background-color: #5D85A3;
+    background-image: url(https://images.pexels.com/photos/53176/architecture-iron-steel-building-53176.jpeg);
+    background-size:cover;
+    background-blend-mode: multiply;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,9 +26,68 @@ html{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #2d3e50a4;
+}
+
+h1{
+    font-size: 30px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #2d3e50;
 }
 
 img{
     width: 150px;
+    opacity: 0.1;
 }
 
+form{
+    width: 100%;    
+}
+
+#name{
+    height: 30px;
+    padding: 10px;
+    
+}
+
+label #labelname{
+    font-size: 18px;
+}
+
+input{
+    width: 90%;
+    margin-top: 10px;
+    font-size: 15px;
+    background-color: #CCCCCB;
+    border: none;
+    color: #7E8D8D;
+}
+
+input::placeholder{
+    color: #7E8D8D ;
+}
+
+button{
+    width: 45%;
+    height: 50px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+    color: #F4F4F5;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#punchin{
+    background-color: #106d43;
+}
+
+#punchout{
+background-color: #c1320f;
+
+}
