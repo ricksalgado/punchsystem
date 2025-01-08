@@ -81,6 +81,7 @@ button{
     border-radius: 8px;
     font-weight: 600;
     text-transform: uppercase;
+    opacity: 0.8;
 }
 
 #punchin{
@@ -91,3 +92,9 @@ button{
 background-color: #c1320f;
 
 }
+
+
+#punchin:hover, #punchout:hover{
+    opacity: 1;
+}
+
