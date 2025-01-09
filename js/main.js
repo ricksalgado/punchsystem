@@ -5,10 +5,7 @@ const punchOutBtn = document.querySelector('#punchout');
 const now = new Date();
 const date = now.toLocaleDateString();
 const time = now.toLocaleTimeString();
-// const sheetUpdate = fetch('https://api.sheetmonkey.io/form/4zJFSXmt6xq7gLgUFnPFrm') {
-//     method: 'POST',
 
-// }
 
 // functions
 function getLocation(callback) {
@@ -32,6 +29,18 @@ function getLocation(callback) {
 function getCurrentDateTime() {
     return { date, time };
 }
+
+function sheetUpdate(employeeName, date, time) {
+    fetch('https://api.sheetmonkey.io/form/4zJFSXmt6xq7gLgUFnPFrm') {
+        method: 'POST';
+        headers: {
+            `Employee`: `${employeeName}`,
+            `Time`: `${time}`,
+            `Date`: `${date}`,
+        }
+        body: JSON.stringify(employeeName, date, time),
+    }
+};
 // get the input
 
 
